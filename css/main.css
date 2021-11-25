@@ -110,24 +110,64 @@ a:visited {
 main {
   padding-top: 30px;
   display: grid;
+  max-width: 1400px;
+  margin: auto;
   grid-template-columns: 40% 40% 20%; }
   main a.small-link {
-    color: #007185; }
-
-.product-images {
-  background: white;
-  height: 100vh; }
-
-.product-desciption {
-  background: lightgray;
-  height: auto; }
-  .product-desciption h1 {
-    font-family: "Amazon Ember Light";
-    font-size: 24px;
-    letter-spacing: 0.1rem; }
-
-.purchase {
-  background: white; }
+    color: #007185;
+    line-height: 1.5; }
+  main .product-images {
+    padding: 0px 20px;
+    background: white;
+    height: 100vh;
+    position: relative; }
+    main .product-images .thumbnail {
+      width: 40px;
+      height: 40px;
+      border: 1px solid gray;
+      margin: 10px; }
+      main .product-images .thumbnail:hover {
+        box-shadow: 0 0 8px #f56600; }
+        main .product-images .thumbnail:hover::after {
+          visibility: visible; }
+      main .product-images .thumbnail::after {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 80px;
+        content: "";
+        width: 85%;
+        height: 100vh;
+        background: palevioletred; }
+      main .product-images .thumbnail1 {
+        background: url("/assets/images/thumb1.jpg") no-repeat center; }
+        main .product-images .thumbnail1::after {
+          background: url("/assets/images/large-img1.jpg") no-repeat;
+          background-size: contain; }
+      main .product-images .thumbnail2 {
+        background: url("/assets/images/thumb2.jpg") no-repeat center; }
+        main .product-images .thumbnail2::after {
+          background: url("/assets/images/large-img2.jpg") no-repeat;
+          background-size: contain; }
+      main .product-images .thumbnail3 {
+        background: url("/assets/images/thumb3.jpg") no-repeat center; }
+        main .product-images .thumbnail3::after {
+          background: url("/assets/images/large-img3.jpg") no-repeat;
+          background-size: contain; }
+      main .product-images .thumbnail4 {
+        background: url("/assets/images/thumb4.jpg") no-repeat center; }
+        main .product-images .thumbnail4::after {
+          background: url("/assets/images/large-img4.jpg") no-repeat;
+          background-size: contain; }
+  main .product-desciption {
+    background: lightgray;
+    height: auto; }
+    main .product-desciption h1 {
+      font-family: "Amazon Ember Light";
+      font-size: 24px;
+      letter-spacing: 0.1rem; }
+  main .purchase {
+    background: white; }
 
 .carouselle {
   height: 100px;
