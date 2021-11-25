@@ -1,0 +1,53 @@
+%nav-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.top-header {
+  @extend %nav-flex;
+  background: #131921;
+  justify-content: space-between;
+
+  &-left,
+  &-right {
+    @extend %nav-flex;
+    justify-content: space-between;
+  }
+
+  .search .input-search {
+    width: 70%;
+  }
+}
+
+.nav-main {
+  padding: 15px;
+  background: #232f3e;
+  ul {
+    @extend %nav-flex;
+    justify-content: flex-start;
+
+    li a {
+      margin: 0px 0.5rem;
+      padding: 0.5rem;
+      list-style-type: none;
+      color: white;
+      border: 1px solid white ;
+      border-radius: 3px;
+
+      :hover {
+        border-color: red; // TODO not working
+      }
+    }
+  }
+}
+
+.deal-banner {
+  background: url("/assets/images/deal-banner.jpg") no-repeat center;
+  height: 40px;
+}

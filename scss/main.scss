@@ -1,3 +1,5 @@
+@import "header";
+
 @font-face {
   font-family: "Amazon Ember";
   src: url("/assets/fonts/Amazon-Ember-Medium.ttf");
@@ -5,33 +7,10 @@
 }
 
 * {
+  padding: 0;
+  margin: 0;
   font-family: "Amazon Ember", Arial, sans-serif;
-  background: pink;
-}
-
-%nav-flex {
-  display: flex;
-  flex-direction: row;
-}
-
-.top-header {
-  @extend %nav-flex;
-  justify-content: space-between;
-}
-
-.nav-main ul {
-  @extend %nav-flex;
-  justify-content: flex-start;
-
-  li {
-    margin: 0px 0.5rem;
-    list-style-type: none;
-  }
-}
-
-.deal-banner {
-  background: url("/dist/assets/images/deal-banner.jpg") no-repeat center;
-  height: 40px;
+  font-size: small;
 }
 
 main {
@@ -48,7 +27,7 @@ main {
   height: auto;
 }
 .purchase {
-  background: lightgreen;
+  background: goldenrod;
 }
 
 .carouselle {
