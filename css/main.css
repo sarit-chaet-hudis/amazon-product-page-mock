@@ -1,4 +1,4 @@
-.top-header, .top-header-left, .top-header-right, .nav-main ul {
+.top-header, .top-header-left, .top-header-right, .top-header .loc-wrap, .top-header .top-header-right .sign-in, .nav-main ul {
   display: flex;
   flex-direction: row; }
 
@@ -17,14 +17,32 @@ a:visited {
     background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -10px -51px;
     width: 96px;
     height: 29px;
-    margin-right: 20px; }
-  .top-header .location-icon {
-    background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -71px -306px;
-    width: 17px;
-    height: 20px;
-    margin: 5px; }
+    margin-right: 20px;
+    border: 1px solid white; }
+  .top-header .loc-wrap {
+    border: 1px solid white; }
+    .top-header .loc-wrap .location-icon {
+      background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -71px -306px;
+      width: 17px;
+      height: 20px;
+      margin: 5px; }
   .top-header .search {
     width: 60%; }
+  .top-header .top-header-right .arrow-down {
+    background: url("/assets/sprites/rzrQQdi0aRm6Dap.png") no-repeat -82px -87px;
+    width: 8px;
+    height: 5px;
+    margin: 3px; }
+  .top-header .top-header-right .loc-select {
+    background: url("/assets/sprites/flag.JPG") no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 20px; }
+  .top-header .top-header-right .sign-in {
+    min-width: 115px;
+    align-items: flex-end; }
+  .top-header .top-header-right > div {
+    margin-right: 15px; }
 
 .nav-main {
   padding: 15px;
@@ -39,8 +57,8 @@ a:visited {
         color: white;
         border: 1px solid transparent;
         border-radius: 3px; }
-        .nav-main ul li a :hover {
-          border-color: red; }
+      .nav-main ul li :hover {
+        border-color: white; }
 
 .deal-banner {
   background: url("/assets/images/deal-banner.jpg") no-repeat center;
@@ -51,18 +69,26 @@ a:visited {
   src: url("/assets/fonts/Amazon-Ember-Medium.ttf");
   font-weight: 400; }
 
+@font-face {
+  font-family: "Amazon Ember Light";
+  src: url("/assets/fonts/AmazonEmber_Lt.ttf"); }
+
 * {
   padding: 0;
   margin: 0;
   font-family: "Amazon Ember", Arial, sans-serif;
-  font-size: small; }
+  font-size: small;
+  box-sizing: border-box; }
 
 .strong {
   font-weight: 700; }
 
 main {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 40% 40% 20%; }
+  main a.small-link {
+    color: #007185; }
 
 .product-images {
   background: white;
@@ -71,6 +97,10 @@ main {
 .product-desciption {
   background: lightgray;
   height: auto; }
+  .product-desciption h1 {
+    font-family: "Amazon Ember Light";
+    font-size: 24px;
+    letter-spacing: 0.1rem; }
 
 .purchase {
   background: white; }

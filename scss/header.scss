@@ -14,36 +14,75 @@ a:visited {
   @extend %nav-flex;
   background: #131921;
   justify-content: space-between;
-    
+
   &-left,
   &-right {
     @extend %nav-flex;
     width: 20%;
   }
-  
+
   .logo {
     background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
       no-repeat -10px -51px;
     width: 96px;
     height: 29px;
     margin-right: 20px;
+    border: 1px solid white;
   }
 
-  .location-icon {
-    background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
-      no-repeat -71px -306px;
-    width: 17px;
-    height: 20px;
-    margin: 5px;
+  .loc-wrap {
+    @extend %nav-flex;
+    border: 1px solid white;
+
+    .location-icon {
+      background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
+        no-repeat -71px -306px;
+      width: 17px;
+      height: 20px;
+      margin: 5px;
+    }
   }
-  .search  {
+
+  .search {
     width: 60%;
+  }
+
+  
+  .top-header-right  {
+    
+    .arrow-down {
+      background: url("/assets/sprites/rzrQQdi0aRm6Dap.png") no-repeat -82px -87px;
+      width: 8px;
+      height: 5px;
+      margin: 3px;
+    }
+    .loc-select {
+      background: url("/assets/sprites/flag.JPG") no-repeat ;
+      background-size: contain;
+      width: 28px;
+      height: 20px;
+    }
+
+    .sign-in {
+      @extend %nav-flex;
+      min-width: 115px;
+      align-items: flex-end;
+    }
+
+    .return {
+      
+    }
+
+     > div {
+      margin-right: 15px;
+    }
   }
 }
 
 .nav-main {
   padding: 15px;
   background: #232f3e;
+
   ul {
     @extend %nav-flex;
     justify-content: flex-start;
@@ -58,10 +97,9 @@ a:visited {
         color: white;
         border: 1px solid transparent;
         border-radius: 3px;
-
-        :hover {
-          border-color: red; // TODO not working
-        }
+      }
+      :hover {
+        border-color: white;
       }
     }
   }

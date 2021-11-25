@@ -6,11 +6,17 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Amazon Ember Light";
+  src: url("/assets/fonts/AmazonEmber_Lt.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: "Amazon Ember", Arial, sans-serif;
   font-size: small;
+  box-sizing: border-box;
 }
 
 .strong {
@@ -18,8 +24,13 @@
 }
 
 main {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 40% 40% 20%;
+
+  a.small-link {
+    color: #007185;
+  }
 }
 
 .product-images {
@@ -29,6 +40,11 @@ main {
 .product-desciption {
   background: lightgray;
   height: auto;
+  h1 {
+    font-family: "Amazon Ember Light";
+    font-size: 24px;
+    letter-spacing: 0.1rem;
+  }
 }
 .purchase {
   background: white;
