@@ -8,27 +8,39 @@ a:visited {
   text-decoration: none; }
 
 .top-header {
+  padding: 18px 22px 8px;
   background: #131921;
   justify-content: space-between; }
   .top-header-left, .top-header-right {
-    justify-content: space-between; }
-  .top-header .search .input-search {
-    width: 70%; }
+    width: 20%; }
+  .top-header .logo {
+    background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -10px -51px;
+    width: 96px;
+    height: 29px;
+    margin-right: 20px; }
+  .top-header .location-icon {
+    background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -71px -306px;
+    width: 17px;
+    height: 20px;
+    margin: 5px; }
+  .top-header .search {
+    width: 60%; }
 
 .nav-main {
   padding: 15px;
   background: #232f3e; }
   .nav-main ul {
     justify-content: flex-start; }
-    .nav-main ul li a {
-      margin: 0px 0.5rem;
-      padding: 0.5rem;
-      list-style-type: none;
-      color: white;
-      border: 1px solid white;
-      border-radius: 3px; }
-      .nav-main ul li a :hover {
-        border-color: red; }
+    .nav-main ul li {
+      list-style-type: none; }
+      .nav-main ul li a {
+        margin: 0px 0.5rem;
+        padding: 0.5rem;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 3px; }
+        .nav-main ul li a :hover {
+          border-color: red; }
 
 .deal-banner {
   background: url("/assets/images/deal-banner.jpg") no-repeat center;

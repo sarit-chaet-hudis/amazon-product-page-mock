@@ -13,21 +13,25 @@
   font-size: small;
 }
 
+.strong {
+  font-weight: 700;
+}
+
 main {
   display: grid;
   grid-template-columns: 40% 40% 20%;
 }
 
 .product-images {
-  background: lightblue;
+  background: white;
   height: 100vh;
 }
 .product-desciption {
-  background: lightcoral;
+  background: lightgray;
   height: auto;
 }
 .purchase {
-  background: goldenrod;
+  background: white;
 }
 
 .carouselle {

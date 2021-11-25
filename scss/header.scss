@@ -10,18 +10,34 @@ a:visited {
 }
 
 .top-header {
+  padding: 18px 22px 8px;
   @extend %nav-flex;
   background: #131921;
   justify-content: space-between;
-
+    
   &-left,
   &-right {
     @extend %nav-flex;
-    justify-content: space-between;
+    width: 20%;
+  }
+  
+  .logo {
+    background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
+      no-repeat -10px -51px;
+    width: 96px;
+    height: 29px;
+    margin-right: 20px;
   }
 
-  .search .input-search {
-    width: 70%;
+  .location-icon {
+    background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
+      no-repeat -71px -306px;
+    width: 17px;
+    height: 20px;
+    margin: 5px;
+  }
+  .search  {
+    width: 60%;
   }
 }
 
@@ -32,16 +48,20 @@ a:visited {
     @extend %nav-flex;
     justify-content: flex-start;
 
-    li a {
-      margin: 0px 0.5rem;
-      padding: 0.5rem;
+    li {
       list-style-type: none;
-      color: white;
-      border: 1px solid white ;
-      border-radius: 3px;
 
-      :hover {
-        border-color: red; // TODO not working
+      a {
+        margin: 0px 0.5rem;
+        padding: 0.5rem;
+
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 3px;
+
+        :hover {
+          border-color: red; // TODO not working
+        }
       }
     }
   }
