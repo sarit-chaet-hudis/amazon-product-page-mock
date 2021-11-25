@@ -1,0 +1,23 @@
+{
+  "name": "amazon-product-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarit-chaet-hudis/amazon-product-page-mock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarit-chaet-hudis/amazon-product-page-mock/issues"
+  },
+  "homepage": "https://github.com/sarit-chaet-hudis/amazon-product-page-mock#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
