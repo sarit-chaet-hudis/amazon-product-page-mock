@@ -18,3 +18,22 @@
   .nav-main ul li {
     margin: 0px 0.5rem;
     list-style-type: none; }
+
+.deal-banner {
+  background: url("/dist/assets/images/deal-banner.jpg") no-repeat center;
+  height: 40px; }
+
+main {
+  display: grid;
+  grid-template-columns: 40% 40% 20%; }
+
+.product-images {
+  background: lightblue;
+  height: 100vh; }
+
+.product-desciption {
+  background: lightcoral;
+  height: auto; }
+
+.purchase {
+  background: lightgreen; }
