@@ -19,6 +19,12 @@ a:visited {
   &-right {
     @extend %nav-flex;
     width: 20%;
+
+    > div {
+      border: 1px solid red;
+     margin-right: 15px;
+   }
+
   }
 
   .logo {
@@ -50,16 +56,10 @@ a:visited {
   
   .top-header-right  {
     
-    .arrow-down {
-      background: url("/assets/sprites/rzrQQdi0aRm6Dap.png") no-repeat -82px -87px;
-      width: 8px;
-      height: 5px;
-      margin: 3px;
-    }
     .loc-select {
       background: url("/assets/sprites/flag.JPG") no-repeat ;
       background-size: contain;
-      width: 28px;
+      min-width: 28px;
       height: 20px;
     }
 
@@ -69,13 +69,11 @@ a:visited {
       align-items: flex-end;
     }
 
-    .return {
-      
+    .returns {
+      min-width: 80px;
     }
 
-     > div {
-      margin-right: 15px;
-    }
+    
   }
 }
 

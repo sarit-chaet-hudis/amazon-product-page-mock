@@ -13,6 +13,9 @@ a:visited {
   justify-content: space-between; }
   .top-header-left, .top-header-right {
     width: 20%; }
+    .top-header-left > div, .top-header-right > div {
+      border: 1px solid red;
+      margin-right: 15px; }
   .top-header .logo {
     background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -10px -51px;
     width: 96px;
@@ -28,21 +31,16 @@ a:visited {
       margin: 5px; }
   .top-header .search {
     width: 60%; }
-  .top-header .top-header-right .arrow-down {
-    background: url("/assets/sprites/rzrQQdi0aRm6Dap.png") no-repeat -82px -87px;
-    width: 8px;
-    height: 5px;
-    margin: 3px; }
   .top-header .top-header-right .loc-select {
     background: url("/assets/sprites/flag.JPG") no-repeat;
     background-size: contain;
-    width: 28px;
+    min-width: 28px;
     height: 20px; }
   .top-header .top-header-right .sign-in {
     min-width: 115px;
     align-items: flex-end; }
-  .top-header .top-header-right > div {
-    margin-right: 15px; }
+  .top-header .top-header-right .returns {
+    min-width: 80px; }
 
 .nav-main {
   padding: 15px;
