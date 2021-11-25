@@ -4,5 +4,17 @@
   font-weight: 400; }
 
 * {
-  color: red;
   font-family: "Amazon Ember", Arial, sans-serif; }
+
+.top-header, .nav-main ul {
+  display: flex;
+  flex-direction: row; }
+
+.top-header {
+  justify-content: space-between; }
+
+.nav-main ul {
+  justify-content: flex-start; }
+  .nav-main ul li {
+    margin: 0px 0.5rem;
+    list-style-type: none; }
