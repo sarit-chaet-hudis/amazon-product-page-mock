@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Amazon Ember";
-  src: url(/dist/assets/fonts/Amazon-Ember-Medium.ttf);
+  src: url("/assets/fonts/Amazon-Ember-Medium.ttf");
   font-weight: 400;
 }
 
@@ -49,4 +49,10 @@ main {
 }
 .purchase {
   background: lightgreen;
+}
+
+.carouselle {
+  height: 100px;
+  background: wheat;
+  flex-grow: 4;
 }
