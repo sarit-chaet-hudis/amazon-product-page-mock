@@ -1,4 +1,4 @@
-.top-header, .top-header-left, .top-header-right, .top-header .loc-wrap, .top-header .top-header-right .sign-in, .nav-main ul {
+.top-header, .top-header-left, .top-header-right, .top-header .loc-wrap, .top-header .search, .top-header .top-header-right .sign-in, .nav-main ul {
   display: flex;
   flex-direction: row; }
 
@@ -31,6 +31,32 @@ a:visited {
       margin: 5px; }
   .top-header .search {
     width: 60%; }
+    .top-header .search .whatToSearch {
+      padding: 10px;
+      height: 100%;
+      align-self: center;
+      background: #f3f3f3;
+      color: #5A5555;
+      font-size: 12px;
+      min-width: 30px;
+      border-radius: 5px 0 0 5px;
+      border-right: 1px solid lightgray; }
+    .top-header .search .input-search {
+      width: 100%;
+      background: white;
+      padding: 2px 10px; }
+      .top-header .search .input-search input {
+        border: none;
+        height: 90%;
+        width: 100%; }
+        .top-header .search .input-search input:focus {
+          border: 2px solid #FF9900 !important; }
+    .top-header .search .btn-search {
+      width: 50px;
+      padding: 15px;
+      background: #FEBD69;
+      color: #333333;
+      border-radius: 0  5px 5px 0; }
   .top-header .top-header-right .loc-select {
     background: url("/assets/sprites/flag.JPG") no-repeat;
     background-size: contain;
