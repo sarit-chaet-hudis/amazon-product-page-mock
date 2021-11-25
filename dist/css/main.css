@@ -1,2 +1,8 @@
+@font-face {
+  font-family: "Amazon Ember";
+  src: url(/dist/assets/fonts/Amazon-Ember-Medium.ttf);
+  font-weight: 400; }
+
 * {
-  color: red; }
+  color: red;
+  font-family: "Amazon Ember", Arial, sans-serif; }
