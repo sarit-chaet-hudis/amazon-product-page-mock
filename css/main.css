@@ -4,7 +4,8 @@
   font-weight: 400; }
 
 * {
-  font-family: "Amazon Ember", Arial, sans-serif; }
+  font-family: "Amazon Ember", Arial, sans-serif;
+  background: pink; }
 
 .top-header, .nav-main ul {
   display: flex;
