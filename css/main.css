@@ -184,16 +184,28 @@ main {
           background: url("/assets/images/large-img4.jpg") no-repeat;
           background-size: contain; }
   main .product-desciption {
-    background: lightgray;
-    height: auto; }
+    height: auto;
+    padding: 20px; }
     main .product-desciption h1 {
       font-family: "Amazon Ember Light";
       font-size: 24px;
-      letter-spacing: 0.1rem; }
+      letter-spacing: 0.1rem;
+      line-height: 1.5; }
+    main .product-desciption .rating {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      border-bottom: 1px solid #E7E7E7;
+      padding: 0 0 8px 0; }
+      main .product-desciption .rating .stars {
+        display: inline-block;
+        background: url("/assets/sprites/ratings-srpite.png") no-repeat -99px -109px;
+        width: 95px;
+        height: 18px;
+        margin-right: 30px; }
   main .purchase {
     background: white; }
 
 .carouselle {
   height: 100px;
-  background: wheat;
-  flex-grow: 4; }
+  background: wheat; }
