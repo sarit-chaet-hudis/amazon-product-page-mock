@@ -41,6 +41,18 @@ main {
     height: 100vh;
     position: relative;
 
+    .image-default {
+      // TODO hide when hover over thumbnail
+      position: absolute;
+      top: 0;
+      left: 80px;
+      content: "";
+      width: 85%;
+      height: 100vh;
+      background: url("/assets/images/large-img2.jpg") no-repeat;
+      background-size: contain;
+    }
+
     .thumbnail {
       width: 40px;
       height: 40px;
@@ -62,7 +74,7 @@ main {
         content: "";
         width: 85%;
         height: 100vh;
-        background: palevioletred;
+        z-index: 10;
       }
 
       &1 {
@@ -114,5 +126,5 @@ main {
 .carouselle {
   height: 100px;
   background: wheat;
-  flex-grow: 4;
+  // flex-grow: 4;
 }

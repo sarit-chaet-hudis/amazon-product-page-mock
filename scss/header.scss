@@ -3,6 +3,12 @@
   flex-direction: row;
 }
 
+%wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a,
 a:visited {
   color: white;
@@ -10,7 +16,6 @@ a:visited {
 }
 
 .top-header {
-  padding: 18px 22px 8px;
   @extend %nav-flex;
   background: #131921;
   justify-content: space-between;
@@ -18,99 +23,114 @@ a:visited {
   &-left,
   &-right {
     @extend %nav-flex;
-    width: 20%;
 
-    > div {
+    div {
       border: 1px solid red;
-      margin-right: 15px;
     }
   }
 
   .logo {
-    background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
-      no-repeat -10px -51px;
+    background: url("/assets/sprites/nav-sprite.png") no-repeat -10px -51px;
     width: 96px;
     height: 29px;
     margin-right: 20px;
-    border: 1px solid white;
   }
 
-  .loc-wrap {
-    @extend %nav-flex;
-    border: 1px solid white;
-
-    .location-icon {
+  .pin-wrap {
+    @extend %wrapper;
+    width: 100px;
+    .pin-icon {
+      //TODO
       background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
         no-repeat -71px -306px;
       width: 17px;
       height: 20px;
-      margin: 5px;
     }
   }
+}
 
-  .search {
-    width: 60%;
-    @extend %nav-flex;
+.search {
+  min-width : 300px;
+  width: 60%;
 
-    .whatToSearch {
-      padding: 10px;
+  @extend %nav-flex;
+
+  .whatToSearch {
+    padding: 10px;
+    background: #f3f3f3;
+    color: #5a5555;
+    font-size: 12px;
+    min-width: 30px;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid lightgray;
+  }
+
+  .input-search {
+    width: 100%;
+    background: white;
+    input {
+      border: none;
       height: 100%;
-      align-self: center;
-      background: #f3f3f3;
-      color: #5A5555;
-      font-size: 12px;
-      min-width: 30px;
-      border-radius: 5px 0 0 5px;
-      border-right: 1px solid lightgray;
-            
-      i {
-        // color: red;
+      width: 100%;
+
+      &:focus {
+        border: 2px solid #ff9900 !important; //TODO
       }
     }
+  }
 
-    .input-search {
-      width: 100%;
-      background: white;
-      padding: 2px 10px;
-        input {
-          border: none;
-          height: 90%;
-          width: 100%;
-          
-          &:focus {
-            border: 2px solid #FF9900 !important;
-          }
-          
-        }
+  .btn-search {
+    width: 50px;
+    padding: 15px;
+    background: #febd69;
+    color: #333333;
+    border-radius: 0 5px 5px 0;
+  }
+}
 
-    }
+.top-header-right {
+  width: 350px;
+  padding: 7px;
 
-    .btn-search {
-      width: 50px;
-      padding:15px;
-      background: #FEBD69;
-      color: #333333;
-      border-radius:  0  5px 5px 0;
+  .loc-flag-wrapper {
+    padding: 5px 10px;
+    @extend %wrapper;
 
+    .loc-flag {
+      background: url("/assets/sprites/flag.JPG") no-repeat;
+      background-size: contain;
+      width: 28px;
+      height: 20px;
+
+      div {
+        color: #a7acb2;
+        display: inline-block;
+        margin-left: 30px;
+      }
     }
   }
 
-  .top-header-right {
-    .loc-select {
-      background: url("/assets/sprites/flag.JPG") no-repeat;
-      background-size: contain;
-      min-width: 28px;
-      height: 20px;
-    }
+  .sign-in.wrapper {
+    @extend %wrapper;
+    min-width: 140px;
 
     .sign-in {
-      @extend %nav-flex;
-      min-width: 115px;
-      align-items: flex-end;
+      padding: 15px 10px;
+
+      div {
+        color: #a7acb2;
+        display: inline-block;
+        margin-left: 30px;
+      }
     }
+  }
+
+  .returns-wrapper {
+    @extend %wrapper;
+    min-width: 100px;
 
     .returns {
-      min-width: 80px;
+      padding: 5px 10px;
     }
   }
 }
