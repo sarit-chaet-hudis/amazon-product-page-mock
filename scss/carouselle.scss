@@ -24,24 +24,61 @@
   .carouselle-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     .card-btn-wrapper {
-      width: 50px;
-      height: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-      background: pink;
-      .btn {
-          background: orange;
-          &-right{
-              border: 1px solid black;
+      .btn-left, .btn-right {
+          height:40px;
+          width: 40px;
+          margin: 10px;
+          padding:10px;
+          background: white;
+          text-align: center;
+          border: 1px solid lightgray;
+          border-radius: 5px;
+
+          &:hover {
+              background: lightgray;
+              cursor: pointer;
           }
+        
       }
     }
 
     .cards-wrapper {
-        width: calc(90% - 100px);
-        height: 20px;
-        background:yellow;
+      width: calc(90% - 100px);
+
+      .card {
+        margin: 10px;
+        width: 160px;
+
+        &-img {
+          background: url(/assets/images/caruselle1.jpg) no-repeat;
+          background-size: contain;
+          height: 160px;
+          width: 100%;
+        }
+        &-rating {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .card-stars {
+            display: inline-block;
+            background: (
+              url("/assets/sprites/ratings-srpite.png") no-repeat -99px -109px
+            );
+            width: 95px;
+            height: 18px;
+          }
+        }
+        &-price {
+          font-size: 18px;
+        }
+      }
     }
   }
 }

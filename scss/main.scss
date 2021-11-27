@@ -27,6 +27,11 @@
 
 a.small-link {
   color: #007185;
+
+  &:hover {
+    text-decoration: underline;
+    color: #b6311c;
+  }
 }
 
 .red {
@@ -139,7 +144,6 @@ main {
   }
 
   .purchase {
-    
     background: white;
     padding: 10px 20px;
     border: 1px solid #d5d9d9;

@@ -168,19 +168,45 @@ a:visited {
       font-weight: 600; }
   .carouselle .carouselle-wrapper {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: center; }
     .carouselle .carouselle-wrapper .card-btn-wrapper {
-      width: 50px;
-      height: 50px;
-      background: pink; }
-      .carouselle .carouselle-wrapper .card-btn-wrapper .btn {
-        background: orange; }
-        .carouselle .carouselle-wrapper .card-btn-wrapper .btn-right {
-          border: 1px solid black; }
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .carouselle .carouselle-wrapper .card-btn-wrapper .btn-left, .carouselle .carouselle-wrapper .card-btn-wrapper .btn-right {
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+        padding: 10px;
+        background: white;
+        text-align: center;
+        border: 1px solid lightgray;
+        border-radius: 5px; }
+        .carouselle .carouselle-wrapper .card-btn-wrapper .btn-left:hover, .carouselle .carouselle-wrapper .card-btn-wrapper .btn-right:hover {
+          background: lightgray;
+          cursor: pointer; }
     .carouselle .carouselle-wrapper .cards-wrapper {
-      width: calc(90% - 100px);
-      height: 20px;
-      background: yellow; }
+      width: calc(90% - 100px); }
+      .carouselle .carouselle-wrapper .cards-wrapper .card {
+        margin: 10px;
+        width: 160px; }
+        .carouselle .carouselle-wrapper .cards-wrapper .card-img {
+          background: url(/assets/images/caruselle1.jpg) no-repeat;
+          background-size: contain;
+          height: 160px;
+          width: 100%; }
+        .carouselle .carouselle-wrapper .cards-wrapper .card-rating {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          .carouselle .carouselle-wrapper .cards-wrapper .card-rating .card-stars {
+            display: inline-block;
+            background: url("/assets/sprites/ratings-srpite.png") no-repeat -99px -109px;
+            width: 95px;
+            height: 18px; }
+        .carouselle .carouselle-wrapper .cards-wrapper .card-price {
+          font-size: 18px; }
 
 @font-face {
   font-family: "Amazon Ember";
@@ -203,6 +229,9 @@ a:visited {
 
 a.small-link {
   color: #007185; }
+  a.small-link:hover {
+    text-decoration: underline;
+    color: #b6311c; }
 
 .red {
   color: #b6311c;
