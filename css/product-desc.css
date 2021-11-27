@@ -24,3 +24,11 @@
     padding-top: 15px; }
     .product-desciption .price .price-title {
       margin-right: 8px; }
+  .product-desciption .import-fees {
+    color: #565959; }
+  .product-desciption table {
+    width: 80%;
+    padding: 10px 30px 10px 0; }
+    .product-desciption table td {
+      display: table-cell;
+      vertical-align: top; }

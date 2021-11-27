@@ -31,7 +31,20 @@
     flex-direction: row;
     padding-top: 15px;
     .price-title {
-        margin-right: 8px;
+      margin-right: 8px;
+    }
+  }
+
+  .import-fees {
+    color: #565959;
+  }
+
+  table {
+    width: 80%;
+    padding: 10px 30px 10px 0;
+    td {
+      display: table-cell;
+      vertical-align: top;
     }
   }
 }

@@ -24,6 +24,16 @@
   font-weight: 700;
 }
 
+a.small-link {
+  color: #007185;
+  
+}
+
+.red {
+  color: #b6311c;
+  font-size: 18px;
+}
+
 main {
   padding-top: 30px;
   display: grid;
@@ -33,16 +43,9 @@ main {
   color: #0f1111;
   font-family: "Amazon Ember Light";
   letter-spacing: 0.03rem;
+  line-height: 1.5;
 
-  a.small-link {
-    color: #007185;
-    line-height: 1.5;
-  }
-
-  .red {
-    color: #b6311c;
-    font-size: 18px;
-  }
+ 
 
   .product-images {
     padding: 10px 20px;
