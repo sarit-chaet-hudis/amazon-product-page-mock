@@ -1,9 +1,47 @@
-.carouselle {
-    height: 100px;
-    background: wheat;
-    grid-column: 1 / -1;
-  
-    
-
+%nav-flex {
+  display: flex;
+  flex-direction: row;
 }
-  
+
+.carouselle {
+  padding: 15px 0;
+  height: 100px;
+  grid-column: 1 / -1;
+
+  .carouselle-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .featured h2 {
+      color: #cc6600;
+      font-size: 18px;
+      font-family: "Amazon Ember";
+      font-weight: 600;
+    }
+  }
+  .carouselle-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .card-btn-wrapper {
+      width: 50px;
+      height: 50px;
+
+      background: pink;
+      .btn {
+          background: orange;
+          &-right{
+              border: 1px solid black;
+          }
+      }
+    }
+
+    .cards-wrapper {
+        width: calc(90% - 100px);
+        height: 20px;
+        background:yellow;
+    }
+  }
+}

@@ -35,7 +35,7 @@ a.small-link {
 }
 
 main {
-  padding-top: 30px;
+  padding: 30px 20px 0 20px;
   display: grid;
   max-width: 1400px;
   margin: auto;
@@ -51,14 +51,12 @@ main {
     font-weight: 600;
     margin-bottom: 10px;
 
-
-    a { 
+    a {
       text-decoration: none;
       color: inherit;
       font-weight: 400;
       font-size: 12px;
       color: #777;
-
     }
     a:hover {
       text-decoration: underline;
@@ -141,7 +139,7 @@ main {
   }
 
   .purchase {
-    margin-right: 20px;
+    
     background: white;
     padding: 10px 20px;
     border: 1px solid #d5d9d9;
