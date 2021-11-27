@@ -32,3 +32,13 @@
     .product-desciption table td {
       display: table-cell;
       vertical-align: top; }
+    .product-desciption table + p {
+      width: 100%;
+      border-bottom: 1px solid #e7e7e7; }
+  .product-desciption h3 {
+    padding: 20px 0 10px 0;
+    font-size: 16px; }
+  .product-desciption ul li {
+    margin-left: 1em; }
+  .product-desciption ul + p {
+    padding: 20px 0 10px 0; }
