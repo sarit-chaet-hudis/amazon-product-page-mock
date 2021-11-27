@@ -1,11 +1,11 @@
 .product-desciption {
   // background: lightgray;
   height: auto;
-  padding: 20px;
+  padding: 10px 20px;
   h1 {
     font-family: "Amazon Ember Light";
     font-size: 24px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.08rem;
     line-height: 1.5;
   }
 
@@ -29,5 +29,9 @@
   .price {
     display: flex;
     flex-direction: row;
+    padding-top: 15px;
+    .price-title {
+        margin-right: 8px;
+    }
   }
 }

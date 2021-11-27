@@ -45,7 +45,7 @@ main {
   }
 
   .product-images {
-    padding: 0px 20px;
+    padding: 10px 20px;
     background: white;
     height: 100vh;
     position: relative;
@@ -56,7 +56,7 @@ main {
       top: 0;
       left: 80px;
       content: "";
-      width: 85%;
+      width: calc(90% - 50px);
       height: 100vh;
       background: url("/assets/images/large-img2.jpg") no-repeat;
       background-size: contain;
@@ -81,7 +81,7 @@ main {
         top: 0;
         left: 80px;
         content: "";
-        width: 85%;
+        width: calc(90% - 50px);
         height: 100vh;
         z-index: 10;
       }
