@@ -33,7 +33,9 @@
           background: lightgray;
           cursor: pointer; }
     .carouselle .carouselle-wrapper .cards-wrapper {
-      width: calc(90% - 100px); }
+      width: calc(90% - 100px);
+      display: flex;
+      flex-direction: row; }
       .carouselle .carouselle-wrapper .cards-wrapper .card {
         margin: 10px;
         width: 160px; }

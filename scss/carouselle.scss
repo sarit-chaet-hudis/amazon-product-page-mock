@@ -51,6 +51,8 @@
 
     .cards-wrapper {
       width: calc(90% - 100px);
+      display: flex;
+    flex-direction: row;
 
       .card {
         margin: 10px;
