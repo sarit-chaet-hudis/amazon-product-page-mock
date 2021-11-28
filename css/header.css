@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: row; }
 
-.top-header .pin-wrap, .top-header-right .loc-flag-wrapper, .top-header-right .sign-in.wrapper, .top-header-right .returns-wrapper {
+.top-header .pin-wrap, .top-header-right .loc-flag-wrapper, .top-header-right .returns-wrapper, .top-header-right .cart-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
@@ -15,19 +16,13 @@ a:visited {
 .top-header {
   background: #131921;
   justify-content: space-between; }
-  .top-header-left div, .top-header-right div {
-    border: 1px solid red; }
   .top-header .logo {
     background: url("/assets/sprites/nav-sprite.png") no-repeat -10px -51px;
     width: 96px;
     height: 29px;
-    margin-right: 20px; }
+    margin: 17px 20px 15px 20px; }
   .top-header .pin-wrap {
     width: 100px; }
-    .top-header .pin-wrap .pin-icon {
-      background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -71px -306px;
-      width: 17px;
-      height: 20px; }
 
 .search {
   min-width: 300px;
@@ -57,10 +52,11 @@ a:visited {
     border-radius: 0 5px 5px 0; }
 
 .top-header-right {
-  width: 350px;
+  width: 380px;
   padding: 7px; }
   .top-header-right .loc-flag-wrapper {
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    margin-right: 20px; }
     .top-header-right .loc-flag-wrapper .loc-flag {
       background: url("/assets/sprites/flag.JPG") no-repeat;
       background-size: contain;
@@ -71,17 +67,33 @@ a:visited {
         display: inline-block;
         margin-left: 30px; }
   .top-header-right .sign-in.wrapper {
-    min-width: 140px; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
     .top-header-right .sign-in.wrapper .sign-in {
-      padding: 15px 10px; }
-      .top-header-right .sign-in.wrapper .sign-in div {
-        color: #a7acb2;
-        display: inline-block;
-        margin-left: 30px; }
+      min-width: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 20px; }
+    .top-header-right .sign-in.wrapper div i {
+      color: #a7acb2;
+      width: 40px; }
   .top-header-right .returns-wrapper {
     min-width: 100px; }
     .top-header-right .returns-wrapper .returns {
       padding: 5px 10px; }
+  .top-header-right .cart-wrapper {
+    width: 100px;
+    color: #e95e1d; }
+    .top-header-right .cart-wrapper .cart-image {
+      text-align: center;
+      background: url("/assets/sprites/nav-sprite.png") no-repeat -10px -340px;
+      width: 38px;
+      height: 26px;
+      margin: 10px; }
 
 .nav-main {
   padding: 15px;

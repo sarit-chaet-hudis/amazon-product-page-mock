@@ -5,6 +5,7 @@
 
 %wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -23,34 +24,30 @@ a:visited {
   &-left,
   &-right {
     @extend %nav-flex;
-
-    div {
-      border: 1px solid red;
-    }
   }
 
   .logo {
     background: url("/assets/sprites/nav-sprite.png") no-repeat -10px -51px;
     width: 96px;
     height: 29px;
-    margin-right: 20px;
+    margin: 17px 20px 15px 20px;
   }
 
   .pin-wrap {
     @extend %wrapper;
     width: 100px;
-    .pin-icon {
-      //TODO
-      background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
-        no-repeat -71px -306px;
-      width: 17px;
-      height: 20px;
-    }
+    // .pin-icon {
+    //   //TODO
+    //   background: url("/assets/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
+    //     no-repeat -71px -306px;
+    //   width: 17px;
+    //   height: 20px;
+    // }
   }
 }
 
 .search {
-  min-width : 300px;
+  min-width: 300px;
   width: 60%;
 
   @extend %nav-flex;
@@ -89,11 +86,12 @@ a:visited {
 }
 
 .top-header-right {
-  width: 350px;
+  width: 380px;
   padding: 7px;
 
   .loc-flag-wrapper {
     padding: 5px 10px;
+    margin-right: 20px;
     @extend %wrapper;
 
     .loc-flag {
@@ -111,17 +109,25 @@ a:visited {
   }
 
   .sign-in.wrapper {
-    @extend %wrapper;
-    min-width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
     .sign-in {
-      padding: 15px 10px;
+      min-width: 200px;
 
-      div {
-        color: #a7acb2;
-        display: inline-block;
-        margin-left: 30px;
-      }
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px 20px;
+    }
+
+    div i {
+      color: #a7acb2;
+      width: 40px;
     }
   }
 
@@ -131,6 +137,19 @@ a:visited {
 
     .returns {
       padding: 5px 10px;
+    }
+  }
+  .cart-wrapper {
+    @extend %wrapper;
+    width: 100px;
+
+    color: #e95e1d;
+    .cart-image {
+      text-align: center;
+      background: url("/assets/sprites/nav-sprite.png") no-repeat -10px -340px;
+      width: 38px;
+      height: 26px;
+      margin: 10px;
     }
   }
 }
