@@ -149,5 +149,10 @@ main {
     border: 1px solid #d5d9d9;
     border-radius: 8px;
     height: 70%;
+    .icon {
+      background: url("/assets/sprites/nav-sprite.png") no-repeat -71px -379px;
+      width: 15px;
+      height: 17px;
+    }
   }
 }
